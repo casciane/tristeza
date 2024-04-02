@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="shortcut icon" href="/icon.png"/>
+
+    <link rel="stylesheet" href="style.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+		<title>dinheiro</title>
+
+        <h1> Dinheiro/Mone</h1>
+		
+		
+		
+	</head>
+	
+	<body>
+
+        <input type="checkbox" name="#" id="toggle" class="toggle-btn">
+        <label for="toggle" class="toggle-label"></label>
+		
+		
+		<p>Converter Reais para dólares.</p>
+		<form>
+			<fieldset>
+				<label>Reais</label>
+				<input type="text" id="reais" />			
+				<input type="submit"  onclick="conversor()" />
+			</fieldset>
+		</form>
+        <script type="text/javascript">
+			var dolares = 0;
+			
+			function conversor(){
+				
+				var reais = document.getElementById('reais').value;
+				
+				
+				reais = parseFloat(reais);
+				
+				
+				dolares = reais / 2.4;
+				
+				console.log(dolares);
+				
+				alert(dolares + " dolares");
+			}
+		</script>
+        
+        
+<script src="main.js"></script>
+
+	</body>
+<html>
